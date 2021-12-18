@@ -4,7 +4,7 @@ import java.util.List;
 public class PedidoImpressao {
     private int numero;
     private Date dataHoraPedido;
-    private List<Impressao> arquivosImpressao;
+    private List<Impressao> impressoes;
     private String corImpressao;
     private String statusImpressao;
     private Date dataHoraEntrega;
@@ -14,32 +14,43 @@ public class PedidoImpressao {
     private static float PRECO_IMPRESSAO= 0.25f;
     private int maxImpressoesGratuitas;
 
+
     public PedidoImpressao(Aluno solicitante, int numero, Date dataHoraPedido, List<Impressao> arquivosImpressao, String corImpressao) {
         this.numero = numero;
         this.dataHoraPedido = dataHoraPedido;
-        this.arquivosImpressao = arquivosImpressao;
+        this.impressoes = arquivosImpressao;
         this.corImpressao = corImpressao;
         this.solicitante = solicitante;
-        maxImpressoesGratuitas=solicitante.getMaxImpressoesGratuitas();
+        maxImpressoesGratuitas=solicitante.getMaxCopiasGratuitas();
     }
 
     public PedidoImpressao(Professor solicitante, int numero, Date dataHoraPedido, List<Impressao> arquivosImpressao, String corImpressao) {
         this.numero = numero;
         this.dataHoraPedido = dataHoraPedido;
-        this.arquivosImpressao = arquivosImpressao;
+        this.impressoes = arquivosImpressao;
         this.corImpressao = corImpressao;
         this.solicitante = solicitante;
-        maxImpressoesGratuitas=solicitante.getMaxImpressoesGratuitas();
+        maxImpressoesGratuitas=solicitante.getMaxCopiasGratuitas();
     }
 
     public float calculaPagamento(){
-        if(maxImpressoesGratuitas <= arquivosImpressao.size()){
+        int totalCopias = calculaTotalCopias();
+
+        if(maxImpressoesGratuitas <= totalCopias){
             return 0.0f;
         }
         else{
-            float preco = (maxImpressoesGratuitas - arquivosImpressao.size())*PRECO_IMPRESSAO;
+            float preco = (maxImpressoesGratuitas - totalCopias)*PRECO_IMPRESSAO;
             return preco;
         }
+    }
+
+    int calculaTotalCopias(){
+        int total =0;
+        for(Impressao i:impressoes){
+            total+=i.getNumCopias();
+        }
+        return total;
     }
 
     public void pagarImpressao(){
@@ -62,12 +73,12 @@ public class PedidoImpressao {
         this.dataHoraPedido = dataHoraPedido;
     }
 
-    public List<Impressao> getArquivosImpressao() {
-        return arquivosImpressao;
+    public List<Impressao> getImpressoes() {
+        return impressoes;
     }
 
-    public void setArquivosImpressao(List<Impressao> arquivosImpressao) {
-        this.arquivosImpressao = arquivosImpressao;
+    public void setImpressoes(List<Impressao> impressoes) {
+        this.impressoes = impressoes;
     }
 
     public String getCorImpressao() {
