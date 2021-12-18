@@ -15,22 +15,13 @@ public class PedidoImpressao {
     private int maxImpressoesGratuitas;
 
 
-    public PedidoImpressao(Aluno solicitante, int numero, Date dataHoraPedido, List<Impressao> arquivosImpressao, String corImpressao) {
+    public PedidoImpressao(Usuario solicitante, int maxImpressoesGratuitas, int numero, Date dataHoraPedido, List<Impressao> arquivosImpressao, String corImpressao) {
         this.numero = numero;
         this.dataHoraPedido = dataHoraPedido;
         this.impressoes = arquivosImpressao;
         this.corImpressao = corImpressao;
         this.solicitante = solicitante;
-        maxImpressoesGratuitas=solicitante.getMaxCopiasGratuitas();
-    }
-
-    public PedidoImpressao(Professor solicitante, int numero, Date dataHoraPedido, List<Impressao> arquivosImpressao, String corImpressao) {
-        this.numero = numero;
-        this.dataHoraPedido = dataHoraPedido;
-        this.impressoes = arquivosImpressao;
-        this.corImpressao = corImpressao;
-        this.solicitante = solicitante;
-        maxImpressoesGratuitas=solicitante.getMaxCopiasGratuitas();
+        this.maxImpressoesGratuitas=maxImpressoesGratuitas;
     }
 
     public float calculaPagamento(){
@@ -40,8 +31,8 @@ public class PedidoImpressao {
             return 0.0f;
         }
         else{
-            float preco = (maxImpressoesGratuitas - totalCopias)*PRECO_IMPRESSAO;
-            return preco;
+            return (maxImpressoesGratuitas - totalCopias)*PRECO_IMPRESSAO;
+
         }
     }
 
@@ -53,9 +44,6 @@ public class PedidoImpressao {
         return total;
     }
 
-    public void pagarImpressao(){
-
-    }
 
     public int getNumero() {
         return numero;
