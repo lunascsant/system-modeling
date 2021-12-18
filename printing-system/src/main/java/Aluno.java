@@ -4,7 +4,7 @@ public class Aluno extends Usuario {
 
     private String matricula;
     private String curso;
-    static int MAX_COPIAS_PERMITIDAS = 50;
+    static int MAX_COPIAS_GRATUITAS = 50;
 
     public Aluno(String nome, String sexo, Calendar dataNascimento, String matricula, String curso) {
         super(nome, sexo, dataNascimento);
@@ -28,7 +28,7 @@ public class Aluno extends Usuario {
         this.curso = curso;
     }
 
-    public static int getMaxCopiasPermitidas() {
-        return MAX_COPIAS_PERMITIDAS;
+    public static int getMaxCopiasGratuitas() {
+        return MAX_COPIAS_GRATUITAS;
     }
 }
