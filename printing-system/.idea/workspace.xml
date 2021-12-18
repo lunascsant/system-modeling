@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Disciplina.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Semestre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SemestreDisciplina.java" afterDir="false" />
+    <list default="true" id="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" name="Default Changelist" comment="Alteração no construtor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PedidoImpressao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PedidoImpressao.java" afterDir="false" />
     </list>
-    <list id="dafc048d-d220-4e81-9909-5ddbcabe51c2" name="Changes by lucia" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/PedidoImpressao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PedidoImpressao.java" afterDir="false" />
-    </list>
+    <list id="dafc048d-d220-4e81-9909-5ddbcabe51c2" name="Changes by lucia" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,22 +24,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/PedidoImpressao.java">
-      <ranges>
-        <range start1="6" end1="7" start2="6" end2="7" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-        <range start1="15" end1="15" start2="15" end2="16" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
-        <range start1="19" end1="20" start2="20" end2="21" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-        <range start1="22" end1="23" start2="23" end2="24" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-        <range start1="28" end1="29" start2="29" end2="30" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-        <range start1="31" end1="32" start2="32" end2="33" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-        <range start1="35" end1="36" start2="36" end2="39" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-        <range start1="39" end1="40" start2="42" end2="43" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-        <range start1="43" end1="43" start2="46" end2="54" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-        <range start1="64" end1="66" start2="75" end2="77" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-        <range start1="68" end1="70" start2="79" end2="81" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-      </ranges>
-    </file>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="38648c3a-da5e-4ccf-ab4c-b5f2bf6c1f0a" />
+        <option name="url" value="https://github.com/lunascsant/system-modeling" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="22QpuBIHwmJQ1e3aSquLa2lDh3x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -70,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639779887181</updated>
       <workItem from="1639823836094" duration="4696000" />
-      <workItem from="1639829039454" duration="4837000" />
+      <workItem from="1639829039454" duration="5507000" />
     </task>
     <servers />
   </component>
@@ -82,7 +68,14 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="BEK_SORT_TYPE" value="1" />
+            </State>
           </value>
         </entry>
       </map>
@@ -91,5 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Alteração no construtor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alteração no construtor" />
   </component>
 </project>
