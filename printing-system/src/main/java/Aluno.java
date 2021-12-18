@@ -27,4 +27,8 @@ public class Aluno extends Usuario {
     public void setCurso(String curso) {
         this.curso = curso;
     }
+
+    public static int getMaxCopiasPermitidas() {
+        return MAX_COPIAS_PERMITIDAS;
+    }
 }
