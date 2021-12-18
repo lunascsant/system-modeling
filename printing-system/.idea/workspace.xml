@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" name="Default Changelist" comment="Alteração no construtor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PedidoImpressao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PedidoImpressao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Disciplina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Semestre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Semestre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SemestreDisciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OfertaDisciplina.java" afterDir="false" />
     </list>
-    <list id="dafc048d-d220-4e81-9909-5ddbcabe51c2" name="Changes by lucia" comment="" />
+    <list id="dafc048d-d220-4e81-9909-5ddbcabe51c2" name="Changes by lucia" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Disciplina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Semestre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Semestre.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +38,22 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Semestre.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="3" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="2" end1="2" start2="5" end2="10" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="10" end1="10" start2="18" end2="30" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/Disciplina.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="2" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="2" end1="2" start2="4" end2="15" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="10" end1="10" start2="23" end2="27" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectId" id="22QpuBIHwmJQ1e3aSquLa2lDh3x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,6 +69,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,8 +83,16 @@
       <option name="presentableId" value="Default" />
       <updated>1639779887181</updated>
       <workItem from="1639823836094" duration="4696000" />
-      <workItem from="1639829039454" duration="5507000" />
+      <workItem from="1639829039454" duration="11448000" />
     </task>
+    <task id="LOCAL-00001" summary="Alteração no construtor">
+      <created>1639837250721</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639837250721</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
