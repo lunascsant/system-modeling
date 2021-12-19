@@ -11,7 +11,6 @@ public class OfertaDisciplina {
         this.disciplina = disciplina;
         this.semestre = semestre;
 
-        //professor.adicionaDisciplina(disciplina);
         disciplina.adicionarOfertaDisciplina(this);
         semestre.adicionarDisciplina(this);
     }
