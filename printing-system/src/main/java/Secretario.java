@@ -3,15 +3,15 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class Secretario extends Usuario {
+public class Secretario extends Funcionario {
 
     private String horarioTrabalho;
     private List<Usuario> usuariosRegistrados;
     private static FilaImpressao filaParaImprimir;
     private List<PedidoImpressao> impressoesConcluidas;
 
-    public Secretario(String nome, String sexo, Date dataNascimento, String horarioTrabalho) {
-        super(nome, sexo, dataNascimento);
+    public Secretario(String nome, String sexo, Date dataNascimento,String matricula, String unidade, String departamento, String horarioTrabalho) {
+        super(nome, sexo, dataNascimento, matricula, unidade, departamento);
         this.horarioTrabalho = horarioTrabalho;
         this.filaParaImprimir = new FilaImpressao();
         this.impressoesConcluidas = new ArrayList<PedidoImpressao>();

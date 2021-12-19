@@ -3,15 +3,15 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class Professor extends Usuario {
+public class Professor extends Funcionario {
 
     private String horarioAtendimento;
     private static int MAX_COPIAS_GRATUITAS = 200;
     private List<OfertaDisciplina> disciplinasMinistradas;
     private Semestre semestreAtual;
 
-    public Professor(String nome, String sexo, Date dataNascimento, String horarioAtendimento) {
-        super(nome, sexo, dataNascimento);
+    public Professor(String nome, String sexo, Date dataNascimento,String matricula, String unidade, String departamento, String horarioAtendimento) {
+        super(nome, sexo, dataNascimento, matricula, unidade, departamento);
         this.horarioAtendimento = horarioAtendimento;
         disciplinasMinistradas = new ArrayList<OfertaDisciplina>();
     }

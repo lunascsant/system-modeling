@@ -9,9 +9,9 @@ public class Main {
 
         // Usuários
         Date birthDate = new Date(2000, 7, 27, 0, 0, 0);
-        Secretario secretario = new Secretario("Alberto Santos", "m", birthDate, "Segunda à sexta - 10h - 18h");
-        Professor professor = new Professor("José da Silva", "m", birthDate, "Terça - 19h às 20h");
-        Professor professor2 = new Professor("João da Silva", "m", birthDate, "Terça - 19h às 20h");
+        Secretario secretario = new Secretario("Alberto Santos", "m", birthDate,"111222333", "A", "B", "Segunda à sexta - 10h - 18h");
+        Professor professor = new Professor("José da Silva", "m", birthDate, "1234567", "ICE", "MAT", "Terça - 19h às 20h");
+        Professor professor2 = new Professor("João da Silva", "m", birthDate,"1324768", "ICE", "DCC", "Terça - 19h às 20h");
         Aluno aluno = new Aluno("Maria Dias", "f", birthDate, "202065566C", "Ciência da Computação");
         secretario.adicionaUsuario(professor);
         secretario.adicionaUsuario(professor2);
