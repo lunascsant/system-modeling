@@ -8,10 +8,9 @@ public class PedidoImpressao {
     private String corImpressao;
     private String statusImpressao;
     private Date dataHoraEntrega;
-    private boolean entregue;
     private String metodoPagamento;
     private Usuario solicitante;
-    private static float PRECO_IMPRESSAO= 0.25f;
+    private static float PRECO_IMPRESSAO = 0.25f;
     private int maxImpressoesGratuitas;
 
 
@@ -22,16 +21,17 @@ public class PedidoImpressao {
         this.corImpressao = corImpressao;
         this.solicitante = solicitante;
         this.maxImpressoesGratuitas=maxImpressoesGratuitas;
+        this.statusImpressao = "Solicitada";
     }
 
     public float calculaPagamento(){
         int totalCopias = calculaTotalCopias();
 
-        if(maxImpressoesGratuitas <= totalCopias){
+        if(totalCopias <= maxImpressoesGratuitas){
             return 0.0f;
         }
         else{
-            return (maxImpressoesGratuitas - totalCopias)*PRECO_IMPRESSAO;
+            return (totalCopias-maxImpressoesGratuitas)*PRECO_IMPRESSAO;
 
         }
     }
@@ -93,13 +93,15 @@ public class PedidoImpressao {
         this.dataHoraEntrega = dataHoraEntrega;
     }
 
-    public boolean isEntregue() {
-        return entregue;
+    public void imprimir() {
+        this.setStatusImpressao("Concluido");
     }
 
-    public void setEntregue(boolean entregue) {
-        this.entregue = entregue;
+    public void pagamentoConcluido(){
+        this.setStatusImpressao("Entregue");
+        this.dataHoraEntrega = new Date();
     }
+
 
     public String getMetodoPagamento() {
         return metodoPagamento;
@@ -108,4 +110,6 @@ public class PedidoImpressao {
     public void setMetodoPagamento(String metodoPagamento) {
         this.metodoPagamento = metodoPagamento;
     }
+
+
 }

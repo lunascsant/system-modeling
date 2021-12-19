@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Disciplina {
@@ -5,6 +6,11 @@ public class Disciplina {
     private String codigo;
     private List<OfertaDisciplina> ofertas;
 
+
+    public Disciplina(String codigo) {
+        this.codigo = codigo;
+        ofertas = new ArrayList<OfertaDisciplina>();
+    }
 
     public String getCodigo() {
         return codigo;
@@ -23,6 +29,12 @@ public class Disciplina {
     }
 
     void adicionarOfertaDisciplina(OfertaDisciplina oferta){
+        if(this.codigo == oferta.getDisciplina().getCodigo()) {
+            return;
+        }
+
         this.ofertas.add(oferta);
     }
+
+
 }

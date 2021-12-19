@@ -5,15 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" name="Default Changelist" comment="Alteração no construtor">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Disciplina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OfertaDisciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OfertaDisciplina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PedidoImpressao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PedidoImpressao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Semestre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Semestre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SemestreDisciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OfertaDisciplina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Secretario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Secretario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Usuario.java" afterDir="false" />
     </list>
     <list id="dafc048d-d220-4e81-9909-5ddbcabe51c2" name="Changes by lucia" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Disciplina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Impressao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Impressao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PedidoImpressao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PedidoImpressao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Secretario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Secretario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Semestre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Semestre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Usuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +50,66 @@
     </option>
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Semestre.java">
+    <file path="$PROJECT_DIR$/src/main/java/Secretario.java">
       <ranges>
-        <range start1="0" end1="0" start2="0" end2="3" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
-        <range start1="2" end1="2" start2="5" end2="10" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
-        <range start1="10" end1="10" start2="18" end2="30" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="0" end1="0" start2="0" end2="1" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="9" end1="9" start2="10" end2="11" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="10" end1="11" start2="12" end2="13" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="14" end1="14" start2="16" end2="18" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="19" end1="19" start2="23" end2="27" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="24" end1="24" start2="32" end2="35" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="27" end1="27" start2="38" end2="65" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="30" end1="31" start2="68" end2="78" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="32" end1="32" start2="79" end2="97" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/Aluno.java">
+      <ranges>
+        <range start1="10" end1="11" start2="10" end2="11" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="36" end1="37" start2="36" end2="37" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/src/main/java/Disciplina.java">
       <ranges>
-        <range start1="0" end1="0" start2="0" end2="2" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
-        <range start1="2" end1="2" start2="4" end2="15" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
-        <range start1="10" end1="10" start2="23" end2="27" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="0" end1="0" start2="0" end2="1" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="7" end1="7" start2="8" end2="13" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="25" end1="25" start2="31" end2="35" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="27" end1="27" start2="37" end2="39" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/Usuario.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="1" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="3" end1="3" start2="4" end2="5" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="7" end1="8" start2="9" end2="10" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="10" end1="11" start2="12" end2="13" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="14" end1="17" start2="16" end2="20" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="36" end1="37" start2="39" end2="40" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="40" end1="41" start2="43" end2="44" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/PedidoImpressao.java">
+      <ranges>
+        <range start1="10" end1="11" start2="10" end2="10" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="13" end1="14" start2="12" end2="13" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="24" end1="24" start2="23" end2="24" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="29" end1="30" start2="29" end2="30" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="33" end1="34" start2="33" end2="34" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="95" end1="97" start2="95" end2="97" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="99" end1="101" start2="99" end2="102" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="103" end1="103" start2="104" end2="105" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="110" end1="110" start2="112" end2="114" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/Professor.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="1" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="11" end1="12" start2="12" end2="13" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="14" end1="14" start2="15" end2="16" changelist="232a2ee3-8de5-45c5-b4ff-4f4fd25c1b2c" />
+        <range start1="26" end1="27" start2="28" end2="33" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="32" end1="33" start2="38" end2="40" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="48" end1="48" start2="55" end2="59" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
+        <range start1="53" end1="54" start2="64" end2="65" changelist="dafc048d-d220-4e81-9909-5ddbcabe51c2" />
       </ranges>
     </file>
   </component>
@@ -74,6 +133,20 @@
       <recent name="" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="printing-system" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,7 +156,8 @@
       <option name="presentableId" value="Default" />
       <updated>1639779887181</updated>
       <workItem from="1639823836094" duration="4696000" />
-      <workItem from="1639829039454" duration="11448000" />
+      <workItem from="1639829039454" duration="11934000" />
+      <workItem from="1639915819120" duration="16091000" />
     </task>
     <task id="LOCAL-00001" summary="Alteração no construtor">
       <created>1639837250721</created>

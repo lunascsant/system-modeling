@@ -11,7 +11,7 @@ public class OfertaDisciplina {
         this.disciplina = disciplina;
         this.semestre = semestre;
 
-        professor.adicionaDisciplina(disciplina);
+        //professor.adicionaDisciplina(disciplina);
         disciplina.adicionarOfertaDisciplina(this);
         semestre.adicionarDisciplina(this);
     }
@@ -30,5 +30,13 @@ public class OfertaDisciplina {
 
     public void setProfessor(Professor professor) {
         this.professor = professor;
+    }
+
+    public Semestre getSemestre() {
+        return semestre;
+    }
+
+    public void setSemestre(Semestre semestre) {
+        this.semestre = semestre;
     }
 }

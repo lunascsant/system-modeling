@@ -2,6 +2,11 @@ public class Impressao {
     private String diretorio;
     private int numCopias;
 
+    public Impressao(String diretorio, int numCopias) {
+        this.diretorio = diretorio;
+        this.numCopias = numCopias;
+    }
+
     public String getDiretorio() {
         return diretorio;
     }

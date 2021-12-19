@@ -5,7 +5,8 @@ public class Semestre {
     private String nome;
     private List<OfertaDisciplina> disciplinasOfertadas;
 
-    public Semestre() {
+    public Semestre(String nome) {
+        this.nome = nome;
         disciplinasOfertadas = new ArrayList<OfertaDisciplina>();
     }
 
@@ -26,6 +27,11 @@ public class Semestre {
     }
 
     public void adicionarDisciplina(OfertaDisciplina ofertaDisciplina){
+        for (OfertaDisciplina disciplinaOfertada : this.getDisciplinasOfertadas()) {
+            if(ofertaDisciplina.getDisciplina().getCodigo().equals(disciplinaOfertada.getDisciplina().getCodigo()))
+                return;
+        }
+
         disciplinasOfertadas.add(ofertaDisciplina);
     }
 }

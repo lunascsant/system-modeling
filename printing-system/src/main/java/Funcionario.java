@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.util.Date;
 
 public class Funcionario extends Usuario {
 
@@ -6,7 +7,7 @@ public class Funcionario extends Usuario {
     private String unidade;
     private String departamento;
 
-    public Funcionario(String nome, String sexo, Calendar dataNascimento, String matricula, String unidade, String departamento) {
+    public Funcionario(String nome, String sexo, Date dataNascimento, String matricula, String unidade, String departamento) {
         super(nome, sexo, dataNascimento);
         this.matricula = matricula;
         this.unidade = unidade;

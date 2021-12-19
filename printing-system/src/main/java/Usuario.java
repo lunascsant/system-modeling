@@ -1,20 +1,23 @@
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Calendar;
+import java.util.Date;
 
 public class Usuario {
     private String nome;
     private String sexo;
-    private Calendar dataNascimento;
+    private Date dataNascimento;
     private int idade;
 
-    public Usuario (String nome, String sexo, Calendar dataNascimento) {
+    public Usuario (String nome, String sexo, Date dataNascimento) {
         this.nome = nome;
         this.sexo = sexo;
         this.dataNascimento = dataNascimento;
-        Calendar agora = Calendar.getInstance();
-        LocalDate aniversario = LocalDate.of(dataNascimento.get(Calendar.YEAR), dataNascimento.get(Calendar.MONTH), dataNascimento.get(Calendar.DAY_OF_MONTH));
-        LocalDate nesseMomento = LocalDate.of(agora.get(Calendar.YEAR), agora.get(Calendar.MONTH), agora.get(Calendar.DAY_OF_MONTH));
+
+        Date agora = new Date();
+        LocalDate aniversario = LocalDate.of(dataNascimento.getYear(), dataNascimento.getMonth(), dataNascimento.getDate());
+        LocalDate nesseMomento = LocalDate.of(agora.getYear() + 1900, agora.getMonth(), agora.getDate());
         this.idade = Period.between(aniversario, nesseMomento).getYears();
     }
 
@@ -34,11 +37,11 @@ public class Usuario {
         this.sexo = sexo;
     }
 
-    public Calendar getDataNascimento() {
+    public Date getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Calendar dataNascimento) {
+    public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

@@ -8,7 +8,7 @@ public class Aluno extends Usuario {
     private String curso;
     static int MAX_COPIAS_GRATUITAS = 50;
 
-    public Aluno(String nome, String sexo, Calendar dataNascimento, String matricula, String curso) {
+    public Aluno(String nome, String sexo, Date dataNascimento, String matricula, String curso) {
         super(nome, sexo, dataNascimento);
         this.matricula = matricula;
         this.curso = curso;
@@ -34,7 +34,7 @@ public class Aluno extends Usuario {
         return MAX_COPIAS_GRATUITAS;
     }
 
-    public void solicitarPedidoImpressao(int numero, Date dataHoraPedido, List<Impressao> arquivosImpressao, String corImpressao) {
+    public void solicitarImpressao(int numero, Date dataHoraPedido, List<Impressao> arquivosImpressao, String corImpressao) {
         Secretario.registrarPedidoImpressao(this, this.getMaxCopiasGratuitas(), numero, dataHoraPedido, arquivosImpressao, corImpressao);
     }
 }

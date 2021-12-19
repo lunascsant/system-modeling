@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -9,9 +10,10 @@ public class Professor extends Usuario {
     private List<OfertaDisciplina> disciplinasMinistradas;
     private Semestre semestreAtual;
 
-    public Professor(String nome, String sexo, Calendar dataNascimento, String horarioAtendimento) {
+    public Professor(String nome, String sexo, Date dataNascimento, String horarioAtendimento) {
         super(nome, sexo, dataNascimento);
         this.horarioAtendimento = horarioAtendimento;
+        disciplinasMinistradas = new ArrayList<OfertaDisciplina>();
     }
 
     public List<OfertaDisciplina> getDisciplinasMinistradas() {
@@ -24,13 +26,18 @@ public class Professor extends Usuario {
 
     public void adicionaDisciplina(Disciplina novaDisciplina){
         for (OfertaDisciplina i: semestreAtual.getDisciplinasOfertadas()){
-            if(i.getDisciplina().getCodigo() == novaDisciplina.getCodigo()) {
+
+            if(i.getDisciplina().getCodigo().equals(novaDisciplina.getCodigo())) {
+                System.out.println("Disciplina "+novaDisciplina.getCodigo()
+                                    +" já está sendo ofertada no semestre "+semestreAtual.getNome()
+                                    +" pelo professor "+ i.getProfessor().getNome());
                 return;
             }
         }
 
         for (OfertaDisciplina i: disciplinasMinistradas){
-            if(i.getDisciplina().getCodigo() == novaDisciplina.getCodigo()) {
+            if(i.getDisciplina().getCodigo().equals(novaDisciplina.getCodigo())) {
+                System.out.println("Disciplina já é ministrada por esse professor.");
                 return;
             }
         }
@@ -47,11 +54,15 @@ public class Professor extends Usuario {
         this.horarioAtendimento = horarioAtendimento;
     }
 
+    public void setSemestreAtual(Semestre semestre) {
+        this.semestreAtual = semestre;
+    }
+
     public static int getMaxCopiasGratuitas() {
         return MAX_COPIAS_GRATUITAS;
     }
 
-    public void solicitarPedidoImpressao(int numero, Date dataHoraPedido, List<Impressao> arquivosImpressao, String corImpressao) {
+    public void solicitarImpressao(int numero, Date dataHoraPedido, List<Impressao> arquivosImpressao, String corImpressao) {
         Secretario.registrarPedidoImpressao(this, this.getMaxCopiasGratuitas(), numero, dataHoraPedido, arquivosImpressao, corImpressao);
     }
 }
